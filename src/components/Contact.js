@@ -18,7 +18,7 @@ const Contact = ({ id, name, email }) => {
             console.log("User updated.");
         })
         .catch((error) => {
-            console.log("Error updating document:", Error);
+            console.log("Error updating document:", error);
         });
 
         setEditing(false);
@@ -30,7 +30,7 @@ const Contact = ({ id, name, email }) => {
             console.log("The user was deleted.");
         })
         .catch((error) => {
-            console.log("Error deleting document:", Error);
+            console.log("Error deleting document:", error);
         });
     }
 
