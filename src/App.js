@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ContactList from './components/ContactList';
 import Form from './components/Form';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
         <Container>
             <Title>Contact List</Title>
             <Form/>
+			<ContactList/>
         </Container>
     );
 }
