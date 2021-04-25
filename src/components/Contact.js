@@ -13,8 +13,8 @@ const Contact = ({ id, name, email }) => {
         db.collection('users').doc(id).update({
             name: updateName,
             email: updateEmail
-        }).
-        then(() => {
+        })
+        .then(() => {
             console.log("User updated.");
         })
         .catch((error) => {
@@ -25,8 +25,8 @@ const Contact = ({ id, name, email }) => {
     }
 
     const deleteContact = (userId) => {
-        db.collection('users').doc(userId).delete().
-        then(() => {
+        db.collection('users').doc(userId).delete()
+        .then(() => {
             console.log("The user was deleted.");
         })
         .catch((error) => {
