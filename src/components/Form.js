@@ -10,8 +10,8 @@ const Form = () => {
         e.preventDefault();
 
         db.collection('users').add({
-            name: name,
-            email: email
+            name,
+            email
         })
         .then(() => {
             console.log("Contact was added to the collection");
